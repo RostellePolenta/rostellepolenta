@@ -1,0 +1,62 @@
+\documentclass[a4paper, notitlepage, abstracton]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{float}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{bytefield}
+\usepackage{fullpage}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{todonotes}
+%\usepackage{tikz}
+
+\usetikzlibrary{arrows,shapes}
+
+\newcommand{\authorswe}{Davide Aguiari, Matteo Martelli}
+
+\pagestyle{fancy}
+\rhead{CookApp}
+%\lhead{}
+
+\rfoot{Davide Aguiari, Matteo Martelli}
+\lfoot{\thepage}
+\cfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\title{CookApp}
+
+\subtitle{Corso di Interazione Persona Computer}
+\date{\today}
+
+\pagenumbering{gobble}
+
+\author{
+	\begin{tabular}{c c}
+		Davide Aguiari & Matteo Martelli\\
+		**********     & 0000702472 
+	\end{tabular}
+}
+
+\maketitle
+
+\pagenumbering{arabic}
+
+\input{core/introduzione.tex}
+\input{core/etnografica.tex}
+\input{core/val-esistenti.tex}
+\input{core/fattibilita.tex}
+\input{core/proposta-intervento.tex}
+\input{core/val-intervento.tex}
+\input{core/conclusioni.tex}
+
+\end{document}
