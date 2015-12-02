@@ -1,0 +1,5 @@
+*.log
+
+relazione/main.out
+relazione/main.aux
+relazione/main.toc
