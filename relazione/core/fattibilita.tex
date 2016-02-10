@@ -83,6 +83,7 @@ un ambiente molto caotico potrebbe essere un vincolo.\\
 Il tutto suggerisce di progettare un applicazione la cui interfaccia sia
 molto semplice, immediata e che riduca il carico di stress
 percepito dall'utente.
+
 \subsection{Personas}
 \begin{table}[H]
 	\begin{centering}
@@ -125,15 +126,15 @@ semplici ma che comunque sono molto graditi dalla sua ragazza spagnola.
 \\ \hline
 		\textbf{Rapporto con la tecnologia} & Prima di quest'anno non
 aveva mai considerato
-l'acquisto di un tablet, essendo abituato ad utilizzare sempre il laptop 
-per necessità d'utilizzo dei software di editing
+l'acquisto di un tablet, essendo abituato a lavorare sempre il laptop 
+per necessità di utilizzo di software di editing
 d'immagini. Dopo avero provato un tablet surface, che permette di
-passare in modalità desktop aggangiando una tastiera al dispositivo, ha
+passare in modalità desktop agganciando una tastiera al dispositivo, ha
 deciso di comprarne uno, affascinato dalla possibilità di poter
 continuare ad utilizzare i suoi software con interfaccia destkop e
 sfruttare allo stesso tempo l'estrema mobilità e le app di un tablet.
 Ha anche una buona familiarità con il Web avendo gestito in passato un proprio
-blog di foto ed una pagina facebook. Lo scorso natale la ragazza le ha
+blog di foto ed una pagina facebook. Lo scorso natale la ragazza gli ha
 regalato uno smartwatch che inizialmente non trovava di particolare
 utilità, ma dopo aver visto che gli permette di visualizzare a distanza
 la ripresa della fotocamera del suo smartphone ha iniziato ad
@@ -357,6 +358,35 @@ piatti ai ristoranti.\\ \hline
 \end{table}
 \subsection{Scenari d'uso}
 \begin{enumerate}
+
+\item Filippo nell'ultimo viaggio in brasile ha conosciuto Paulo, un
+impiegato in banca appassionato di fotografia. Filippo ospiterà per un
+weekend Paulo
+e suoi 3 amici che stanno visitando l'Italia. A tal proposito voleva
+preparare una cena tipica italiana di benvuto. Per non risultare banale,
+si affida a
+CookApp scegliendo uno tra i menù preimpostati consigliatii. Il menù
+scelto prevede per antipasto ``Capasanta atlantica con gatzpacho fresco
+e croccante di pane'', per primo dei ``Ravioletti ripieni di cacio e
+pepe'' e per secondo una ``tagliata di fassona piemontese''. Decide però
+di sostituire il secondo con ``Spiedini di gamberi'', un piatto scelto tra i ``Tipici della
+zona''. Infine come dolce, inserisce un classico ``Tiramisù'' nel menù.
+Dopo aver ultimato le modifiche al menù aggiunge tutti gli ingredienti
+necessari alla lista della spesa. Dalla schermata della lista della
+spesa Filippo cerca i punti vendita dove per poter acquistare gli
+ingredienti e scegli quelli più vicino a casa. A questo punto esce di
+casa seguendo il percorso verso i punti vendita selezionati,
+visualizzati sulla mappa del suo smartwatch. Arrivato al primo punto
+vendita lo smartwatch indica, tramite una mappa più dettagliata, le posizioni degli ingredienti delle
+relative corsie del supermercato. Grazie al modulo NFC dello smartwatch,
+Filippo scansiona il tag NFC dei prodotti da acquistare che vengono
+automaticamente confermati sulla lista della spesa. Infine si dirige
+alla cassa e effettua il pagamento di tutta la spesa posizionando lo
+smartwatch al sensore della cassiera. 
+Finita la spesa nei diversi punti vendita, Filippo torna a casa e
+prepara una deliziosa cenetta per i suoi amici brasiliani.
+
+
 \item Per le vacanze di Pasqua i coinquilini di Flora tornano a casa dalla famiglia, e
 lei decide quindi di invitare per pranzo l'amica Francesca e il suo
 ragazzo Enrico, per voler ricambiare la grande ospitalità che lei spesso
@@ -365,20 +395,55 @@ solitamente era sempre tornata in Scozia per le vacanze e non ha idea di
 cosa mangino gli italiani in queste occasioni.
 
 Tramite l'applicazione
-cookApp, Flora accede alla categoria "Ricette delle Feste" e alla
-sottocategoria "Pasqua" trovando facilmente i piatti tipici pasquali. 
+cookApp, già impostata in lingua inglese grazie al riconoscimento della lingua
+di sistema del suo tablet, Flora accede alla categoria ``Holidays'' e alla
+sottocategoria ``Easter'' trovando facilmente i piatti tipici pasquali. 
+Si ricorda però che la sua amica Francesca è vegetariana quindi
+seleziona il filtro di vista ``With vegetarian version'' che le permette
+di visualizzare tutte le ricette che abbiano anche le istruzioni per
+prepararne una variante vegetariana. Ha preferito questo filtro rispetto
+a ``Vegetarian'' in quanto il ragazzo di Francesca è amante della carne e
+così ha modo di prepare gli stessi piatti per tutti, ma in due versioni
+diverse. Una volta individuate le ricette decide di aggiungerle ad un
+nuovo menù personalizzato. CookApp inoltre, durante la consultazione
+della categoria pasqua, suggerisce a Flora di decorare la
+tavola con degli ovetti di pasqua, che all'apparenza sembrano delle
+classiche uova sode decorative ma che poi riveleranno una simpatica sorpresa al
+loro interno. Grazie a CookApp Flora riesce a preperare senza difficoltà
+il pranzo pasquale a fare felici i suoi amici.
 
-%TODO francesca è l'amica hipster di flora da cui va a dormire. flora le
-%vuole preparare una cena italiana ma francesca è vegana.
 
-%TODO nello scenario maria litiga col marito perchè il napoletano
-%giuseppe sta
-%per arrivare senza preavviso e non si possono fare più i fagottini che
-%tanto piacciono al suo nipote milanese preferito. Il marito di maria sostiene
-%che il napoletano non è intollerante ma gli fanno male le mozzarelle
-%campane perchè contaminate dai rifiuti nel sottosuolo, mentre potrebbe
-%mangiare il buonissimo e incontaminato Bitto. Con l'app maria trova
-%un'alternativa con un formaggio senza lattosio, dicendo al marito che
-%c'è del vero Bitto dicendogli però di "mentire" al napoletano.
+\item La signora Maria, in occasione della visita che le faranno
+l'indomani i suoi figli da Milano, decide di preparare i fagottini al
+Bitto che tanto piacciono al suo nipotino Marco. La mattina dopo Chiara, la
+figlia di Maria che vive a Napoli, avverte sua madre che è in viaggio,
+insieme a suo marito carabiniere Giuseppe e la loro bambina,
+per andare a trovarla. Le dice anche che arriverrano per l'ora di pranzo, scusandosi
+per non averglielo detto prima ma si sono
+riusciti ad organizzare solamente all'ultimo momento. Maria è molto
+felice che si riunirà tutta la famiglia anche se è un po' dispiaciuta
+perchè non può più prepare i fagottini al Bitto inquanto Giuseppe è
+intollerante al lattosio. Inoltre la decisione di Maria
+altera l'animo del marito il quale sostiene che il carabiniere non è
+davvero intollerante ma ha problemi con le mozzarelle napoletane perchè
+contaminate dai rifiuti del sottosuolo campano. Non volendo far
+dispiacere nessuno, la signora Maria prova a cercare su CookApp una
+variante dei fagottini al Bitto per intolleranti al lattosio. In
+particolare scrive ``fagottini al bitto'' nella barra di ricerca
+selezionando il filtro ``Senza lattosio''. Non ottiene nessun risultato
+ma CoockApp le chede se vuole rivolgersi alla comunità online per un
+aiuto sulla ricetta ``Fagottini al bitto''. Maria pigia l'apposito
+pulsante di conferma e tramite la casella di inserimento e il pulsante
+di invio, pubblica la sua richiesta per la community. Ottiene nel giro
+di qualche minuto una risposta di una ragazza di Sondrio che le
+consiglia di utilizzare un composto di maionese e tofu. Maria seleziona
+quest'ultimo ingrediente e ne compare una descrizione, oltre ad un
+pulsante ``Dove comprare''. Maria lo pigia e compare una mappa di
+supermercati nelle vicinanze. Nota che il supermercato più vicino che
+hanno il tofu è a Bergamo, quindi chiede al figlio di Milano se può
+passare a comprare questo ingrediente al supermercato di Bergamo. Infine
+Maria prepara degli ottimi fagottini al tofu e maionese che non deludono
+nessuno, neanche il marito, che nonostante aver riconosciuto la
+differenza ammette che gli sono piaciuti.
 
 \end{enumerate}
