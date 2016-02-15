@@ -1,0 +1,34 @@
+\section{Proposta di intervento}
+\subsection{Introduzione}
+In questo documento vengono spiegate le scelte progettuali che hanno portato alla realizzazione del prototipo di interfaccia mobile dell’applicazione denominata CookApp.\\
+Inizialmente vengono descritte le scelte implementative dell'interfaccia adottate, identificando il design adatto.\\
+Si continua con l'introduzione della \textit{Gamification} utile per un apprendimento veloce dell'applicazione e alla descrizione delle sfide che permettono di invogliare l'utente all'utilizzo costante.\\
+Dopo un'esplicativa parte sull'archittettura dell'informazione, verrà proposto lo schema Blueprint dell'applicazione al fine di individuare tutti i passi che l'utente può fare durante l'esperienza di utilizzo.
+
+\subsection{Scelte implementative}
+Il modello scelto per l'applicazione segue l'approccio Goal-oriented, dato che il fine ultimo è il raggiungimento di un particolare obiettivo da parte dell'utente in un periodo breve/medio. L'obiettivo è quello di realizzare un piatto grazie all'aiuto fornito da CookApp o la creazione di un menù a partire dal vasto catalogo di ricette fornito.\\
+Per implementare un design comodo e naturale all'utente medio, siamo partiti dagli esempi di applicazioni esistenti e abbiamo cercato i pregi di entrambe, verificando trasversalmente quali fossero i task più complessi rilevati duranti i test e riproponendoli in modalità più semplici.\\
+Le scelte implementative si focalizzano quindi sulla facilità d'uso dell'applicazione, in modo che questi risulti di facile apprendimento fin da subito e che permetta all'utente medio di utilizzarla senza ricorrere all'help fornito ogniqualvolta non si ricordi una funzione.\\
+Grazie all'analisi etnografica abbiamo constatato come l'utenza media sia molto eterogenea nel campo tecnologico e gastronomico; l'interfaccia è quindi studiata per venire incontro a tutte le possibili necessità diverse che possono avere utenti con esperienze passate diverse: si è utilizzato un linguaggio neutro, nè troppo specialistico nè troppo dettagliato, in modo che l'applicazione sia contemporaneamente discreta e non invasiva all'utente più preparato, che preferisce la velocità d'uso ad eventuali consigli.\\
+Tecnicamente, cioè stato possibile implementando diverse viste nelle sezioni, come la possibilità di visualizzare una ricetta in 3 diverse modalità descritta successivamente o dando all'utente professionista la possibilità di scegliere se interagire con l'aspetto social o no.
+
+
+%\begin{enumerate}
+%\item La vista "Passo-passo 3D" è una nuova funzionalità esclusiva che permette di interagire a 360° con una riproduzione 3D del piatto che si sta preparando. Ogni fase è accompagnata da un'animazione in tre dimensioni, che permette di verificare la corretta procedura su più punti di visione.
+%\item La vista "Passo-passo video" affianca la descrizione testuale della ricetta alla visione di un video che mostra la procedura tramite il player. Il sistema è ottimizzato per sincronizzare il tempo di riproduzione del video e la fase del procedimento corrispondente.
+%\item La "Vista compatta" è quella classica, dove vengono mostrate tutte le fasi di preparazione, lasciando all'utente il compito di sincronizzare lavoro e testo scritto.
+%\end{enumerate}
+
+\subsection{Gamification}
+Per migliorare il coinvolgimento dell'utente nell'applicazione e per renderla più conforme agli applicativi moderni, si è deciso di affiancare alla parte più tradizionale di ricette e menù, una parte sociale.\\
+Gli utenti, quindi, hanno la possibilità di interagire tra loro e collaborare.\\
+Al fine di istruire l'utente inesperto e introdurre un livello di sfida nell'utente medio, si è scelto si utilizzare la gamification:
+l'utente che crea un nuovo profilo, sarà inizialmente introdotto all'applicazione per mezzo di tutorial esplicativi e gli verrà assegnato un livello di esperienza di base.\\
+Man mano che un utente acquisisce livelli di esperienza, espressi mediante numeri e nomi accattivanti, vengono sbloccate nuove funzioni, come la possibilità di aiutare utenti che fanno richieste live, creare discussioni nella sezione community o creare menù pubblici.\\
+Solamente mediante il costante utilizzo delle altre funzioni disponibili, insieme al feedback positivo degli altri utenti, è possibile aumentare il proprio livello di esperienza, arrivando al completo dominio dell'applicazione.\\
+L'utente professionista può sempre decidere di disattivare le funzioni social al fine di utilizzare l'applicazione come puro strumento d'aiuto durante la preparazione dei pasti, rinunciando però ad eventuali suggerimenti, spesso utili.\\
+Questo approccio è stato pensato principalmente per soddisfare ogni tipologia di utente, da quella più inesperta, a quella più capace nell'ambito tecnologico e/o culinario, permettendo a entrambe le categorie un uso stimolante e mai noiose dell'applicativo.\\
+L’applicazione infatti tiene in forte considerazione quelle persone che amano poter condividere le proprie realizzazioni in un contesto sociale adeguato, potendo chiedere aiuto a una community di utenti sempre pronta a dare suggerimenti e consigli, imparando ed aiutando allo stesso tempo.
+
+
+\subsection{Architettura delle informazioni}
