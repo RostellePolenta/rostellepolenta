@@ -1,7 +1,13 @@
 *.log
+*.swp
 
 relazione/main.out
 relazione/main.aux
 relazione/main.toc
 relazione/main.pdf
 relazione/main.synctex.gz
+relazione/main2.out
+relazione/main2.aux
+relazione/main2.toc
+relazione/main2.pdf
+relazione/main2.synctex.gz

@@ -58,13 +58,13 @@ tramite il cloud condiviso.
 \label{fig:blueprint}
 \begin{figure}[!h]
 \centering
-\fbox{\includegraphics[width=\linewidth]{img/blueprint.pdf}}
+\fbox{\includegraphics[width=0.9\linewidth]{img/blueprint.pdf}}
 \end{figure}
 \end{landscape}
 
 
 \subsection{Prototipo dell'interfaccia}
-\textbf{Homepage}
+\subsubsection{Homepage}
 Una volta effettuato il login, all'utente viene mostrata la homepage.\\
 Subito si può notare la struttura generale dell'applicazione:
 \begin{itemize}
@@ -75,15 +75,23 @@ Subito si può notare la struttura generale dell'applicazione:
 \end{itemize}
 La homepage è il punto di ingresso dell'applicazione: al centro è possibile avere un'overview generale, un \textit{Cover flow} sfogliabile con swipe orizzontali, permette la visualizzazioni del piatto del giorno, del menù del giorno e di piatti legati a festività o eventi inerenti al periodi.\\
 Sotto, invece, vi sono due scorciatoie per le ricette e i menù recentemente visitati, insieme a una serie di riquadri delle ricette più cliccate in generale.
-\begin{figure}
-	\begin{center}
-	\includegraphics[width=\linewidth]{img/mockup/Homepage.png}
-	\includegraphics[width=\linewidth]{img/mockup/Homepage-menu.png}
-	\includegraphics[width=\linewidth]{img/mockup/Homepage-menu.png}
-	\end{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Homepage.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Homepage-menu.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Homepage-microphone.png}
 \end{figure}
 
-\textbf{Aiuto LIVE}
+\subsubsection{Ricerca}
+TODO
+
+\subsubsection{Aiuto LIVE}
 Ogniqualvolta un utente chieda aiuto alla community durante la preparazione di un piatto, viene automaticamente creata un'apposita voce nella sezione, sempre consultabile, degli aiuti live.\\
 Ordinati in ordine cronologico, ogni voce è eliminabile in ogni momento e si presenta di diversi colori:
 \begin{itemize}
@@ -91,8 +99,24 @@ Ordinati in ordine cronologico, ogni voce è eliminabile in ogni momento e si pr
 \item Giallo: la richiesta ha alcune risposte, ma nessuna è stata selezionata come esaustiva
 \item Verde: la richiesta è stata soddisfatta e non è più presente nelle richieste pendenti.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Live1.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Live2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Live3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Live4.png}
+\end{figure}
 
-\textbf{Ricettario}
+\subsubsection{Ricettario}
 Il ricettario è il cuore dell'intero catalogo di CookApp: svariate categorie sono presentate all'utente disposte in un design a mosaico. Le categorie più gettonate tendono a coprire un'area maggiore rispetto alle ricette meno selezionate dalla comunità.\\
 Con un semplice tocco delle dita è possibile aprire ogni categoria per ottenere la lista delle ricette.\\
 L'utente è inoltre invitato a inserire una propria ricetta mediante l'apposito pulsante oppure può filtrare i risultati visibili cliccando sul simbolo dell'imbuto.\\\\
@@ -100,8 +124,32 @@ L'utente è inoltre invitato a inserire una propria ricetta mediante l'apposito 
 Ogni categoria mostra le ricette disposte in ordine alfabetico (se l'ordinamento è attivo) ed è possibile già individuare eventuali ricette vegetariane o vegane dall'apposito simbolo presente nei riquadri.\\
 L'apposito filtro permette di selezionare determinate tipologie di ricette, in base agli ingredienti presenti, facendo anche particolarmente attenzione a diete particolari e all'intolleranza al lattosio e al glutine. Ulteriori parametri sui quali è possibile fare l'operazioni di filtro sono il tempo il preparazione e le variante vegatariane e vegane di piatti simili.\\
 L'opzione "Cos'hai in frigo" è appositamente studiata in CookApp per collegarsi con i modelli più moderni di smartFridge: la sincronizzazione cloud con il frigorifero permetterà di filtrare i risultati in base ai prodotti freschi presenti nel frigo. L'opzione è ovviamente disabilitata se non è presente uno smartFridge collegato.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario-filtro.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario-antipasti.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario-antipasti-filtro.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario-antipasti-filtro2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricettario-antipasti-filtro3.png}
+\end{figure}
 
-\textbf{Ricetta}
+\subsubsection{Ricetta}
 Ogni ricetta presenta una lunga schermata visualizzabile mediante lo swipe verticale della pagina.\\
 Il banner iniziale mostra la fotografia di copertina della ricetta scelta dall'utente, insieme alla votazione media delle recensioni espressa su 5 stelle e alla possibilità di eliminare la ricetta dal catalogo se si è l'autore.\\
 Tempo di preparazione, di cottura, difficoltà di realizzazione e costo delle materie prime, sono ben visibili affianco alla galleria di fotografie della ricette; sempre qui è inoltre possibile sapere quanti utenti hanno aggiunto la ricetta ai propri preferiti.\\
@@ -115,8 +163,45 @@ La fase di preparazione mostra 3 diverse tipologie di vista, per soddisfare ogni
 Ogni step di preparazione mostra sempre la possibilità di chiedere alla community, aiuto riguardo quel preciso passaggio. Automaticamente verrà creata una nuova voce della sezione "Aiuti live" già descritta in precedenza.\\
 Nelle ultime sezioni vi sono i pulsanti di interazione con la ricetta: è qui possibile aggiungere la ricetta ai preferiti, aggiungere la ricetta ad un menù personale (con la possibilità di crearne uno direttamente da qui) e la possibilità di condividere la ricetta sui social network o sui servizi di messaggistica.\\
 Infine la sezione "Recensioni" permette sia la scrittura che la lettura delle opinioni di altri utenti sulla ricetta.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta2-spesa.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta4.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta5.png}
+\end{figure}
+y\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta6.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta7.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta-remove.png}
+\end{figure}
 
-\textbf{Aggiunta di una ricetta}
+
+\subsubsection{Aggiunta di una ricetta}
 Mediante all'apposito pulsante "Aggiungi una ricetta" è possibile arricchire il catalogo di CookApp.\\
 Si interagisce quindi con una serie di fasi che guidano passo-passo l'utente all'inserimento di tutte le informazioni necessarie: qui vi si trova la possibilità di inserire tutte i dati visti in precedenza nella sezione "Ricette".\\
 Si noti come, nella fase 3, è possibile abbinare a ogni descrizione di fase di preparazione, una fotografia esplicativa o un video. Sempre in questa sezione, il tasto "Aggiungi un'altra fase" permette di inserire qualsiasi numero di step necessari al completamento della ricetta.\\
@@ -124,8 +209,183 @@ L'ultima fase, ovvero la quarta, permette all'utente di indicare se il piatto è
 Dopo aver impostato difficoltà, costo e numero di persone, si invita l'utente a inserire un set di tag per classificare correttamente la ricetta: se il tag inserito è riconosciuto dal sistema, verrà visualizzato in un riquadro colorato.\\
 Completato l'inserimento di tutti i dati richieste l'utente non deve fare altro che confermare l'inserimento della ricetta.\\
 Il sistema conclude l'operazione assegnando un quantitativo di punti esperienza permettendo all'utente di avanzare di livello (vedi sez. Gamification).\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta1.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta4.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta5.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta6.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta7.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta8.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Aggiungi-ricetta9.png}
+\end{figure}
 
-\textbf{Profilo}
+
+\subsubsection{Catalogo Menù}
+Il catalogo dei menù offre, in una maniera molto simile al ricettario,
+una lista di menù da preparare divisa per categorie. Le categorie sono
+diverse: dai menù delle feste, ai pic-nic, ai buffet di diverse
+tipologie. La disposizione delle categorie è anche qui organizzata a
+mosaico, tramite la quale CookApp da maggiore rilevanza alle catogorie
+più votate dalla comunità e selezionate più frequentemente dall'utente.
+Dal catologo dei menù, analogalmente al ricettario, è possibile selezionare una categoria di menù,
+aggiungere un menù nel catagolo e filtrare i risultati.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-2.png}
+\end{figure}
+
+\subsubsection{Menù}
+TODO
+
+\subsubsection{Menù Preparazione}
+TODO
+
+
+\subsubsection{Crea Menù}
+Selezionando il pulsante ``Crea menù'' dalla schermata iniziale del
+catalogo dei menù o da una sua categoria, viene aperto un form diviso in
+3 fasi che permette di comporre un nuovo menù da un insieme di
+ricette.\\
+L'utente può scegliere se crearlo ``pubblico'' oppure ``privato''. Nel primo
+caso verrà inserito nel catalogo dei menù e sarà visibile da tutti gli
+utenti di CookApp, mentre nel secondo caso verrà aggiunto nella sezione
+``I miei menù'' all'interno del profilo.\\ 
+Il form di creazione è molto simile al form di aggiunta di una ricetta.
+Le differenza principale è che in questo caso l'utente può aggiungere
+nel menù da creare le ricette già esistenti nel ricettario tramite
+l'apposito strumento di ricerca ricette riproposto nel form. Il tempo di
+preparazione totale viene calcolato come somma dei tempi di preparazione
+delle ricette inserite, ma è comunque modificale dall'utente tramite uno
+slider. Il costo, la difficoltà e il numero di persone della fase 3 sono preimpostati
+in base alle media dei parametri delle singole ricette inserite, ma
+anche in questo caso sono modificabili dall'utente.\\
+Una volta terminata la creazione, CookApp assegna 20 punti all'utente
+per la creazione di un 
+menù privato e 50 per la creazione di un menù pubblico, incentivando
+così la creazione di menù da inserire nel catalogo. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-4.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-5.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-6.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-crea-7.png}
+\end{figure}
+
+\subsubsection{Lista della spesa}
+
+TODO
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/spesa.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/spesa-add.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/spesa-edit.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/spesa-completa.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/punti-vendita.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/punti-vendita-2.png}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/zmart.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/zmart-vista-ricetta.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/zmart-add.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/zmart-punti-vendita.png}
+\end{figure}
+
+
+
+
+
+\subsubsection{Community}
+TODO
+
+\subsubsection{Profilo}
 La sezione profilo mostra inizialmente alcune delle informazioni inserite nella fase di registrazione.\\
 Nella sezione "Generale" è inizialmente mostrato un riepilogo delle azioni svolte di recente dall'utente o da altri utenti se questi hanno interagito con ricette/menù pubblicati. Sotto invece è possibile tenere d'occhio i progressi ottenuti nel sistema mediante un indicatore di punti esperienza e dei livelli sbloccati e sbloccabili.\\
 Le sezioni "Le mie ricette" e "I miei menù", come suggerisce il nome indica ricette e menù pubblicati nel sistema con una rapida visione del numero di utenti che hanno inserito le ricette nei propri preferiti.\\
@@ -136,12 +396,50 @@ Nel pannello di modifica del profilo è possibile modificare molti dei parametri
 \item L'utente medio è l'utente che sa interagire bene col sistema, ma preferisce mantenere attive le funzionalità social per scambiare opinioni con la comunità ed eventualmente chiedere aiuto durante la preparazione della ricetta.
 \item L'utente esperto non ha bisogno di funzionalità social che interferiscono con un uso metodico del sistema. 
 \end{itemize}
-
-\textbf{Impostazioni}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-generale.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-generale2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-menu.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-modifica.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-modifica2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-preferiti.png}
+\end{figure}
+y\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-preferiti2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Profilo-ricette.png}
+\end{figure}
+\subsubsection{Impostazioni}
 Qui vi sono le principali impostazioni previste dall'applicazione.\\ Normalmente questa imposterà di default la lingua del sistema, ma se si vuole è possibile cambiarla da un apposito menù a tendina.\\
 Le difficoltà della lettura possono essere risolte aumentando qui la grande del font.\\
 Se i suoni dell'applicazione o delle notifiche provoca disturbo, qui è possibile disattivarle.\\
 Infine è possibile definire qual è la visualizzazione preferita dei procedimenti delle ricette, insieme al sistema di misura utilizzato per pesare gli ingredienti.\\
-
-\textbf{Help}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Impostazioni.png}
+\end{figure}
+\subsubsection{Help}
 In questa sezione l'utente troverà, in ogni momento, la possibilità di leggere in modo dettagliato ogni funzionalità dell'applicazione, insieme alle risposte delle domande più frequenti (FAQ).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Help.png}
+\end{figure}
