@@ -69,7 +69,44 @@ Una volta effettuato il login, all'utente viene mostrata la homepage.\\
 Subito si può notare la struttura generale dell'applicazione:
 \begin{itemize}
 \item Una barra orizzontale posta nella parte superiore dell'app permette di fare operazioni di undo/redo per tornare in schede già visitate in precedente o per annullare certe azioni; al centro viene sempre visualizzato il logo appositamente creato mentre a destra è possibile cercare una ricetta o un menù semplicemente immettendo il nome della ricetta stessa o degli ingredienti separati da virgole; infine l'avatar a destra permette di accedere al proprio profilo.
-\item La barra verticale posta a sinistra è il menù delle sezioni dell'applicazione; in ordine troviamo la homepage, il ricettario, i menù, la lista della spesa, la sezione community, le impostazioni e l'help. In fondo è visibile l'icona per i comandi vocali attivabili tramite il comando "Ehy CookAp".
+\item La barra verticale posta a sinistra è il menù delle sezioni
+dell'applicazione; in ordine troviamo la homepage, il ricettario, i
+menù, la lista della spesa, la sezione community, le impostazioni e
+l'help. In fondo è visibile l'icona per i comandi vocali attivabili
+tramite il comando ``Ehy CookApp''.
+È possibile attivare i messaggi vocali in qualsiasi sezione
+dell'applicazione ed in qualsiasi momento. Alcuni
+comandi vocali principali sono utilizzabili ovunque nell'applicazione,
+mentre ne vedremo degli aggiuntivi specifici per alcune sezione.
+L'utente verrà istruito sul funzionamento dei comandi vocali con un
+tutorial audio/video che comparirà alla prima attivazione della modalità
+a comandi vocali. I comandi principali sono: 
+\begin{itemize} 
+	\item \emph{leggi testo}: abilita il text to speech della schermata
+visualizzata attualmente dall'utente.
+	\item \emph{scorri in alto}: scorre la vista attuale versa l'alto.
+	\item \emph{scorri in basso}: scorre la vista attuale verso il
+basso.
+	\item \emph{vai a}: permette di passare ad una sezione
+dell'applicazione aggiungendo la parola/le parole della sezione che si vuole
+raggiungere (e.g. \emph{catalogo ricette}, \emph{Impostazioni}, etc.).
+Grazie a questo comando si può anche specificare di seguire l'azione
+della pressione di un pulsante specificando il testo del pulsante. Per
+i pulsanti che non hanno testo, a seguito della pronuncia di \epmh{vai
+a}, CookApp affianca temporaneamente una parola per ogni pulsante sprovvisto di testo
+indicativo.
+	\item \emph{scrivi}: permette di inserire il testo tramite dettato
+vocale. È attivabile solamente se nella schermata corrente sono presenti
+caselle di inserimento testo. Nel caso ce ne fossero più di una, CookApp
+mostrerà una parola o un numero indicativo per ogni casella di testo da
+poter specificare dopo la pronuncia di \emph{scrivi}.
+	\item \emph{cerca ricetta}: permette di cercare una ricetta
+pronunciando la ricetta da voler cercare a seguito del comando.
+	\item \emph{cerca menu}: permette di cercare un menù
+pronunciando la ricetta da voler cercare a seguito del comando.
+	\item \emph{aiuto}: ripete il tutorial dei comandi vocali. 
+\end{itemize}
+
 \item In basso a destra è sempre visibile un'icona raffigurando la chat delle richieste di aiuto live attive. Nel momento in cui si riceve una risposta a qualche richiesta, l'icona cambia e diventa di colore giallo, in attesa di una sua lettura. Successivamente viene descritta più approfonditamente la chat.
 \item Infine al centro della pagina è visibile il contenuto iniziale della homepage, in questo caso.
 \end{itemize}
@@ -206,6 +243,27 @@ y\begin{figure}[H]
 	\includegraphics[width=0.95\linewidth]{img/mockup/Ricetta-remove.png}
 \end{figure}
 
+Comandi vocali ricetta: 
+\begin{itemize}
+\item \emph{avvia preparazione}: scorre la schermata fino alla vista di
+preparazione. CookApp legge in seguito il testo del primo passo se di
+default è impostata una delle modalità passo-passo.
+\item \emph{avvia passo-passo}: passa alla modalità passo-passo se si
+era in vista completa. Se non è specificata una modalità di default
+passo-passo viene visualizzata quella 3D.
+\item \emph{prossimo passo}: va al prossimo passo della praparazione.
+\item \emph{passo precedente}: va al passo precedente della praparazione.
+\item \emph{vai al passo}: indicando un dopo il comando
+si salta fino al passo indicato.
+\item \emph{avvia video}: fa partire il video del passo corrente. Cambia
+anche modalità se si era in un altra modalità.
+\item \emph{ferma video}: mette in pausa il video del passo corrente.
+\item \emph{ricomincia video}: fa ripartire il video al punto inizale
+del passo corrente.
+\item \emph{vista compatta}: si passa alla vista compatta.
+\item \emph{qualcuno mi aiuti}: fa una richiesta di aiuto live alla
+community.
+\end{itemize}
 
 \subsubsection{Aggiunta di una ricetta}
 Mediante all'apposito pulsante "Aggiungi una ricetta" è possibile arricchire il catalogo di CookApp.\\
@@ -293,8 +351,10 @@ ingredienti.\\
 Scorrendo la schermata, vengono mostrate le ricette che fanno parte del
 menù. In fondo alla lista delle ricette c'è un riquadro che permette di
 aggiungere/rimuovere un menù ai preferiti, aggiungerne gli ingredienti
-alla lista della spesa, personalizzare il menù creandone una copia da 
-
+alla lista della spesa, personalizzare il menù creandone una copia da
+poter modificare e condividere il menù nei social network.
+Infine è possibile inviare una recensione con voto riguardo al menù
+appena consulato.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.95\linewidth]{img/mockup/menu-overview-1.png}
@@ -307,16 +367,62 @@ alla lista della spesa, personalizzare il menù creandone una copia da
 	\centering
 	\includegraphics[width=0.95\linewidth]{img/mockup/menu-overview-3.png}
 \end{figure}
+\subsubsection{Menù preparazione}
+Avviando la preparazione del menù vegono mostrate le ricette da seguire.
+Selezionando una ricetta, ne vengono mostrati i passaggi da compiere.
+Nei passaggi le quantità degli ingredienti da utilizzare sono ripetute
+in modo da permettere all'utente di eseguire tutta la preparazione
+senza cambiare schermata.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\linewidth]{img/mockup/menu-overview-4.png}
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-preparazione.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-preparazione-2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-preparazione-3.png}
+\end{figure}
+Comandi vocali preparazione menù:
+\begin{itemize}:
+\item \emph{avvia preparazione}: espande la prima ricetta visualizzando la
+vista di preparazione di quella ricetta. Si può far partire la
+preparazione da una determinata ricetta indicando vocalmente il nome della ricetta
+o il numero della sua posizione in lista dopo aver pronunciato il
+comando.
+\item \emph{prossima ricetta}: espande la ricetta successiva alla corrente
+mostrandone la vista di preparazione. 
+\item \emph{ricetta precedente}: espande la ricetta precedente alla corrente
+mostrandone la vista di preparazione.
+\item \emph{vai alla ricetta}: apre la ricetta nella sua visualizzazione
+completa.
+\item Tutti i comandi vocali utilizzabili nella fase di preparazione di una
+ricetta.
+\subsubsection{Menù personale}
+Nella schermata principale di visualizzazione di un menù c'è la
+possibilità di passare in modalità di modifica, tramite un icona con
+matita, se il menù visualizzato è un menù personale dell'utente, ovvero
+è stato creato come ``privato''.\\
+Passando in modalità di modifica compare una schermata simile alla
+precedente ma dove l'utente ha la possibilità di modificare le
+informazioni e la lista delle ricette del menù. Questa schermata è la
+stessa che compare quando viene selezionato il tasto ``Copia Menù e
+personalizzalo'' alla fine di una visualizzazione di un menù.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-personale-1.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-personale-2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/menu-personale-3.png}
 \end{figure}
 
-\subsubsection{Menù preparazione}
-TODO
-
-\subsubsection{Menù personale}
-\TODO
 
 \subsubsection{Crea menù}
 Selezionando il pulsante ``Crea menù'' dalla schermata iniziale del
@@ -371,8 +477,14 @@ così la creazione di menù da inserire nel catalogo.
 \end{figure}
 
 \subsubsection{Lista della spesa}
-
-TODO
+La sezione della lista della spesa consente
+all'utente di consultare gli ingredienti presenti in lista e
+spuntarli. Viene proposta in due viste: vista per ricette, che permette
+di visualizzare gli ingredienti suddivisi per ricette, e vista
+completa che non presenta alcuna suddivisione.\\
+Tramite gli appositi pulsanti laterali è possibile inserire nuovi
+ingredienti o modificare gli ingredienti già presenti, rimuovendoli o
+modificandone le quantità.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.95\linewidth]{img/mockup/spesa.png}
@@ -390,6 +502,18 @@ TODO
 	\includegraphics[width=0.95\linewidth]{img/mockup/spesa-completa.png}
 \end{figure}
 
+Dalla vista della lista della spesa si può passare alla consultazione
+dei punti vendita nelle vicinanze in cui sono presenti gli ingredienti.
+Cookapp fornisce una mappa con diversi percorsi selezionabili, ciascuno dei quali
+può consistere in una sequenza di più punti vendita.\\ 
+Avviando la
+navigazione, un applicazione esterna guiderà l'utente per tutto il
+percorso. Raggiunto un punto vendita il sistema riporterà il controllo a
+CookApp che selezionerà automaticamente il punto vendita in cui l'utente
+si trova attualmente. L'utente può quindi entrare virtualmente all'interno del
+negozio anche dall'applicazione che mostrerà una mappa interna del punto
+vendita. Tramite questa schermata l'utente può facilmente individuare
+la posizione degli ingredienti da acquistare.
 
 \begin{figure}[H]
 	\centering
@@ -400,7 +524,10 @@ TODO
 	\includegraphics[width=0.95\linewidth]{img/mockup/punti-vendita-2.png}
 \end{figure}
 
-
+Le funzionalità che permettono all'utente di interagire con la lista
+della spesa e con i punti vendita sono riproposte anche in versione
+smartwatch, così da permettere all'utente di uscire di casa con un
+dispositivo meno ingombrante di un tablet.
 
 \begin{figure}[H]
 	\centering
@@ -418,13 +545,50 @@ TODO
 	\centering
 	\includegraphics[width=0.95\linewidth]{img/mockup/zmart-punti-vendita.png}
 \end{figure}
-
-
-
-
+Comandi vocali nella lista della spesa e nel punto vendita:
+\begin{itemize}
+\item \emph{spunta}, consente di indicare come ``preso'' un ingrediente
+della lista della spesa indicando vocalmente il nome dell'ingrediente
+dopo il comando. Questo comando è disponibile un tutte le
+visualizzazioni della lista della spesa. Nella visualizzazione per
+ricette comparirà un numero identificativo affianco ciascun ingrediente
+duplicato da indicare a seguito del nome dell'ingrediente.
+\item \emph{aggiungi/rimuovi ingrediente}, consente di
+aggiungere/rimuovere un ingrediente
+alla lista della spesa indicando vocalmente il suo nome dopo aver
+pronunciato il comando.
+\item \emph{naviga}, avvia o riprende la navigazione.
+\end{itemize}
+Questi comandi sono disponibili sia per l'interfaccia del tablet che per
+l'interfaccia dello smartwatch.
 
 \subsubsection{Community}
-TODO
+La sezione della community permette di creare nuove discussioni e
+chiedere informazioni a tutti gli utenti di CookApp sparsi per il mondo.
+È possibile inoltre rispondere a delle richieste d'aiuto che stanno
+inserendo altri utenti durante determinate fasi di preparazione.\\
+L'interazione con la community è molto intuitiva e familiare grazie al look della
+sezione che ricorda molto i classici forum.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Community.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Community2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Community3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Community4.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{img/mockup/Community5.png}
+\end{figure}
 
 \subsubsection{Profilo}
 La sezione profilo mostra inizialmente alcune delle informazioni inserite nella fase di registrazione.\\
